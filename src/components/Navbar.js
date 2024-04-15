@@ -8,7 +8,7 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
       <Link to="/">
         <div className="flex">
           <img className='w-10 h-10' src={Logo} alt='Logo' loading="lazy"/>
-          <p className="mt-2 text-slate-100">Study Notion</p>
+          <p className="mt-2 text-slate-100">StudySphere</p>
         </div>
       </Link>
       <nav>
@@ -17,10 +17,10 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/'>About</Link>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/'>Contact</Link>
+            <Link to='/contact'>Contact</Link>
           </li>
         </ul>
       </nav>
