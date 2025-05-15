@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom';
 import {toast} from 'react-hot-toast'
 const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
   return (
-    <div className="flex justify-between items-center w-8/12 max-w-6xl py-4 mx-auto">
+    <div className="flex justify-between items-center w-screen px-12 py-4  mx-auto">
       <Link to="/">
         <div className="flex">
           <img className='w-10 h-10' src={Logo} alt='Logo' loading="lazy"/>
-          <p className="mt-2 text-slate-100">StudySphere</p>
+          <p className="mt-2  text-slate-100  text-lg font-semibold">StudySphere</p>
         </div>
       </Link>
       <nav>
-        <ul className="flex mt-2 gap-6 ml-3 text-slate-100">
+        <ul className="flex mt-2 gap-6 ml-3 text-slate-100 text-lg font-semibold">
           <li>
             <Link to='/'>Home</Link>
           </li>
@@ -28,14 +28,14 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
       <div className="flex items-center gap-x-4">
         { !isLoggedIn &&
           <Link to="/login">
-            <button className="bg-state-800 text-slate-100 py-[8px] px-[12px] rounded-[8px] border border-slate-700 ">
+            <button className="bg-state-800 text-slate-100 py-[8px] px-[12px] rounded-[8px] border border-slate-700  text-lg font-semibold">
               Login
             </button>
           </Link>
         }
         { !isLoggedIn &&
           <Link to='/signup'>
-            <button className="bg-state-800 text-slate-100 py-[8px] px-[12px] rounded-[8px] border border-slate-700">
+            <button className="bg-state-800 text-slate-100 py-[8px] px-[12px] rounded-[8px] border border-slate-700   text-lg font-semibold">
               Sign up
             </button>
           </Link>
